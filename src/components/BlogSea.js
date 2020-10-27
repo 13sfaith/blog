@@ -39,7 +39,14 @@ class BlogSea extends React.Component {
 		const data = []
 		for (let i = 0; i < this.state.items.length; i++)
 		{
-			data.push(<Preview title={this.state.items[i]["title"]} subtitle={this.state.items[i]["subtitle"]}/>)
+			data.push(
+				<a href={"/post/" + this.state.items[i]["title"]}>
+					<Preview 
+						title={this.state.items[i]["title"]} 
+						subtitle={this.state.items[i]["subtitle"]}
+					/>
+				</a>
+			)
 		}
 
 		return(

@@ -5,7 +5,7 @@ class Header extends React.Component {
 	render()
 	{
 		return(
-			<NavBar bg="dark" variant="dark" expand="lg">
+			<NavBar variant="dark" expand="lg">
 				<NavBar.Brand href="https://13sfaith.com">13sfaith</NavBar.Brand>
 			</NavBar>
 		)
