@@ -2,6 +2,8 @@ import React from 'react'
 
 import Preview from './Preview'
 
+import '../styles/BlogSea.css'
+
 class BlogSea extends React.Component {
 	constructor(props)
 	{
@@ -15,7 +17,7 @@ class BlogSea extends React.Component {
 
 	componentDidMount()
     {
-        fetch("https://api.13sfaith.com/blog/hello.php")
+        fetch("https://api.13sfaith.com/blog/get_all.php")
             .then(res => res.json())
             .then(
                 (result) => { 
@@ -44,13 +46,14 @@ class BlogSea extends React.Component {
 					<Preview 
 						title={this.state.items[i]["title"]} 
 						subtitle={this.state.items[i]["subtitle"]}
+						date={this.state.items[i]["date"]}
 					/>
 				</a>
 			)
 		}
 
 		return(
-			<div>
+			<div class="hold"> 
 				{data}
 			</div>
 		)

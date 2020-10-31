@@ -1,0 +1,43 @@
+body
+{
+  background-color: #232326;
+  color: #fff;
+}
+
+h1 {
+  grid-area: a;
+}
+
+h3 {
+  grid-area: c;
+}
+
+p {
+  grid-area: d;
+}
+
+img {
+  width: 8rem;
+  grid-area: b;
+}
+
+.card {
+  width: 25vw;
+  height: 5%;
+  display: grid;
+  grid-template-areas:
+     "a b"
+     "c b"
+     "d b";
+  grid-template-rows: 3rem 3rem 2rem;
+  grid-template-columns: 25vw 1fr;
+  margin-bottom: 48px;
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.card:hover {
+  /*background-color: #555;*/
+  color: #000;
+}

@@ -1,0 +1,13 @@
+a {
+	width: 25vw;
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.hold {
+	width: 25vw;
+}
