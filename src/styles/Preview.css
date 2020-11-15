@@ -4,33 +4,65 @@ body
   color: #fff;
 }
 
-h1 {
-  grid-area: a;
+@media only screen and (min-width: 900px)
+{
+  .preview-title {
+    grid-area: a;
+	text-align: left;
+  }
+
+  .preview-subtitle {
+    grid-area: c;
+	text-align: left;
+  }
+
+  .preview-date {
+    grid-area: d;
+  }
+
+  img {
+    grid-area: b;
+
+    width: 8rem;
+	display: block;
+  }
 }
 
-h3 {
-  grid-area: c;
-}
+@media only screen and (max-width: 900px)
+{
+  .preview-title {
+    grid-area: a;
+	font-size: 5vw;
+  }
 
-p {
-  grid-area: d;
-}
+  .preview-subtitle {
+	display: none;
+	grid-area: c;
+	white-space: nowrap;
+	overflow: hidden;
+  }
 
-img {
-  width: 8rem;
-  grid-area: b;
+  .preview-date {
+    grid-area: d;
+  }
+
+  img {
+    width: 8rem;
+    grid-area: b;
+  }
 }
 
 .card {
-  width: 25vw;
+  width: 50vw;
   height: 5%;
   display: grid;
   grid-template-areas:
      "a b"
      "c b"
      "d b";
-  grid-template-rows: 3rem 3rem 2rem;
-  grid-template-columns: 25vw 1fr;
+  /*grid-template-rows: 3rem 3rem 2rem;*/
+  grid-template-rows: 25% 50% 25%;
+  grid-template-columns: 75% 25%;
   margin-bottom: 48px;
   margin-left: 50px;
   background-color: transparent;

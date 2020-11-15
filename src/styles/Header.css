@@ -1,13 +1,43 @@
 .nav-class {
-	width: 50vw;
+	width: 50%;
+	
 }
 
-.nav-link {
-	width: 5vw;
+.social-a {
+	width: 100%;
 }
+
+.main-a:hover {
+	color: #000;
+}
+
 
 svg {
 	-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
     filter: invert(100%);
 }
 
+svg:hover {
+	-webkit-filter: invert(0%); /* safari 6.0 - 9.0 */
+	filter: invert(0%);
+}
+
+
+image {
+	width: 50%;
+}
+
+
+.head-contain {
+    display: flex;
+    justify-content: space-between;
+	height: 10vh;
+}
+
+.head-obj {
+  
+}
+
+.social {
+  display: flex;
+}

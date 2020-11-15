@@ -1,0 +1,30 @@
+.body-md {
+    text-align: left;
+}
+
+.body-md a {
+    text-decoration: underline;
+    color: #aaa;
+}
+
+.body-md h2 {
+	padding-top: 10vh;
+}
+
+.body-md h5 {
+	padding-top: 3vh;
+}
+
+.title {
+	font-size: 9vw;
+	text-align: center;
+}
+
+.subtitle {
+	text-align: left;
+	font-size: 25px;
+}
+
+hr {
+	background-color: #fff;
+}

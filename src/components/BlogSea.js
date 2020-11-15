@@ -42,7 +42,7 @@ class BlogSea extends React.Component {
 		for (let i = 0; i < this.state.items.length; i++)
 		{
 			data.push(
-				<a href={"/post/" + this.state.items[i]["title"]}>
+				<a key={i} href={"/post/" + this.state.items[i]["title"]}>
 					<Preview 
 						title={this.state.items[i]["title"]} 
 						subtitle={this.state.items[i]["subtitle"]}
@@ -53,7 +53,7 @@ class BlogSea extends React.Component {
 		}
 
 		return(
-			<div class="hold"> 
+			<div className="hold"> 
 				{data}
 			</div>
 		)

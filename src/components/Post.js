@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
-import { useParams } from 'react-router-dom'
+
+
+import '../styles/Post.css'
 
 
 class Post extends React.Component {
@@ -54,10 +56,14 @@ class Post extends React.Component {
 		}
 		return (
 			<div>
-				<h1>{title}</h1>
-				<h3>{subtitle}</h3>
+				<h1 class="title">{title}</h1>
+				<hr/>
+				<p class="subtitle">{subtitle}</p>
 				<p>Views: {views}</p>
-				<ReactMarkdown children={body} />
+				<hr/>
+				<div class="body-md"> 
+					<ReactMarkdown children={body} />
+				</div>
 			</div>
 		)
 	}
